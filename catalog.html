@@ -8,9 +8,9 @@
     <header class="main-header">
       <div class="container">
         <div class="header-top">
-          <figure class="logo">
-            <img src="http://placehold.it/150x100">
-          </figure>
+          <a class="logo" href="#">
+            <img src="http://placehold.it/150x100" alt="Логотип">
+          </a>
           <ul class="main-nav">
             <li><a href="#">Студия</a></li>
             <li><a href="#">Клиенты</a></li>
@@ -21,18 +21,28 @@
             <a href="#">Корзина</a>
           </div>
         </div>
-
-        <section class="promo">
-          <h1 class="title">Магазин готовых шаблонов</h1>
-        </section>
+        <h1 class="title">Магазин готовых шаблонов</h1>
       </div>
     </header>
 
     <main>
       <div class="container">
-        <section class="grid">
-          <h2 class="title">Сетка:</h2>
-          <form action="#" method="post">
+        <section class="cost">
+          <h2 class="title">Стоимость:</h2>
+          <div class="slider">
+            <span class="mark"></span>
+            <span class="mark"></span>
+          </div>
+          <div class="cost-value">
+            <span class="text">от</span>
+            <span class="value">0</span>
+            <span class="text">до</span>
+            <span class="value">15000</span>
+          </div>
+        </section>
+        <form class="characteristics">
+          <fieldset class="grid">
+            <legend class="title">Сетка:</legend>
             <label>
               <input type="radio" name="grid-item" value="responsive" checked>
               Адаптивная
@@ -47,12 +57,10 @@
               <input type="radio" name="grid-item" value="rubber">
               Резиновая
             </label>
-          </form>
-        </section>
+          </fieldset>
 
-        <section class="features">
-          <h2 class="title">Особенности:</h2>
-          <form action="#" method="post">
+          <fieldset class="features">
+            <legend>Особенности: </legend>
             <label>
               <input type="checkbox" name="slider" checked>
               Cлайдер
@@ -77,24 +85,26 @@
               <input type="checkbox" name="trash">
               Корзина
             </label>
-          </form>
-          <a class="btn" href="#">Показать</a>
-        </section>
+          </fieldset>
+          <button class="btn" name="show">Показать</button>
+        </form>
 
         <section class="catalog">
           <h2 class="title">Сортировать:</h2>
           <a class="sort-mark" href="#">По цене</a>
           <a class="sort-mark" href="#">По типу</a>
           <a class="sort-mark" href="#">По названию</a>
-          <a class="sort-btn active" href="#">По убыванию</a>
+          <a class="sort-btn active">По убыванию</a>
           <a class="sort-btn" href="#">По возрастанию</a>
 
           <article class="catalog-item">
-            <button class="btn"></button>
-            <button class="btn"></button>
-            <button class="btn"></button>
+            <div class="top-line">
+              <span class="circle"></span>
+              <span class="circle"></span>
+              <span class="circle"></span>
+            </div>
             <figure class="pic">
-              <img src="http://placehold.it/150x100">
+              <img src="http://placehold.it/150x100" alt="Макет Sedona">
             </figure>
             <h3 class="title">Sedona</h3>
             <p class="description">
@@ -105,53 +115,63 @@
           </article>
 
           <article class="catalog-item">
-            <button class="btn"></button>
-            <button class="btn"></button>
-            <button class="btn"></button>
+            <div class="top-line">
+              <span class="circle"></span>
+              <span class="circle"></span>
+              <span class="circle"></span>
+            </div>
             <figure class="pic">
-              <img src="http://placehold.it/150x100">
+              <img src="http://placehold.it/150x100" alt="Макет Pink">
             </figure>
           </article>
 
           <article class="catalog-item">
-            <button class="btn"></button>
-            <button class="btn"></button>
-            <button class="btn"></button>
+            <div class="top-line">
+              <span class="circle"></span>
+              <span class="circle"></span>
+              <span class="circle"></span>
+            </div>
             <figure class="pic">
-              <img src="http://placehold.it/150x100">
+              <img src="http://placehold.it/150x100" alt="Макет Barbershop">
             </figure>
           </article>
 
           <article class="catalog-item">
-            <button class="btn"></button>
-            <button class="btn"></button>
-            <button class="btn"></button>
+            <div class="top-line">
+              <span class="circle"></span>
+              <span class="circle"></span>
+              <span class="circle"></span>
+            </div>
             <figure class="pic">
-              <img src="http://placehold.it/150x100">
+              <img src="http://placehold.it/150x100" alt="Макет Mishka">
             </figure>
           </article>
 
           <article class="catalog-item">
-            <button class="btn"></button>
-            <button class="btn"></button>
-            <button class="btn"></button>
+            <div class="top-line">
+              <span class="circle"></span>
+              <span class="circle"></span>
+              <span class="circle"></span>
+            </div>
             <figure class="pic">
-              <img src="http://placehold.it/150x100">
+              <img src="http://placehold.it/150x100" alt="Макет A+">
             </figure>
           </article>
 
           <article class="catalog-item">
-            <button class="btn"></button>
-            <button class="btn"></button>
-            <button class="btn"></button>
+            <div class="top-line">
+              <span class="circle"></span>
+              <span class="circle"></span>
+              <span class="circle"></span>
+            </div>
             <figure class="pic">
-              <img src="http://placehold.it/150x100">
+              <img src="http://placehold.it/150x100" alt="Макет Кваст">
             </figure>
           </article>
         </section>
 
         <div class="catalog-pages">
-          <a class="btn active" href="#">1</a>
+          <a class="btn active">1</a>
           <a class="btn" href="#">2</a>
           <a class="btn" href="#">3</a>
           <a class="btn" href="#">Следующая</a>
@@ -168,7 +188,7 @@
               191186, Санкт-Петербург,<br>
               ул. Б. Конюшенная, д. 19/8
             </p>
-            <p>тел. +7 (812) 275-75-75</p>
+            <p>тел. <a href="tel:+781227575">+7 (812) 275-75-75</a></p>
             <a class="btn" href="#">Напишите нам</a>
           </section>
         </div>
@@ -179,7 +199,7 @@
           <a class="social-btn vk" href="#">Вконтакте</a>
           <a class="social-btn fb" href="#">Фейсбук</a>
           <a class="social-btn inst" href="#">Инстаграм</a>
-          <h2 class="title">Давайте дружить, это выгодно!</h2>
+          <b class="slogan">Давайте дружить, это выгодно!</b>
           <p class="description">Скидка 10% для друзей из социальных сетей.</p>
         </div>
       </section>
