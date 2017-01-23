@@ -7,7 +7,7 @@
   <body>
     <header class="main-header">
       <div class="container">
-        <div class="header-top">
+        <nav class="header-top">
           <a class="logo" href="#">
             <img src="http://placehold.it/150x100" alt="Логотип">
           </a>
@@ -20,27 +20,29 @@
           <div class="shopping-cart">
             <a href="#">Корзина</a>
           </div>
-        </div>
+        </nav>
         <h1 class="title">Магазин готовых шаблонов</h1>
       </div>
     </header>
 
     <main>
       <div class="container">
-        <section class="cost">
-          <h2 class="title">Стоимость:</h2>
-          <div class="slider">
-            <span class="mark"></span>
-            <span class="mark"></span>
-          </div>
-          <div class="cost-value">
-            <span class="text">от</span>
-            <span class="value">0</span>
-            <span class="text">до</span>
-            <span class="value">15000</span>
-          </div>
-        </section>
         <form class="characteristics">
+          <fieldset class="cost">
+            <legend class="title">Стоимость:</legend>
+            <div class="slider">
+              <span class="mark"></span>
+              <span class="mark"></span>
+            </div>
+            <label>
+              от
+              <input type="text" name="start-value" value="0" readonly>
+            </label>
+            <label>
+              до
+              <input type="text" name="finish-value" value="15000" readonly>
+            </label>
+          </fieldset>
           <fieldset class="grid">
             <legend class="title">Сетка:</legend>
             <label>
@@ -90,7 +92,7 @@
         </form>
 
         <section class="catalog">
-          <h2 class="title">Сортировать:</h2>
+          <b class="title">Сортировать:</b>
           <a class="sort-mark" href="#">По цене</a>
           <a class="sort-mark" href="#">По типу</a>
           <a class="sort-mark" href="#">По названию</a>
@@ -98,11 +100,6 @@
           <a class="sort-btn" href="#">По возрастанию</a>
 
           <article class="catalog-item">
-            <div class="top-line">
-              <span class="circle"></span>
-              <span class="circle"></span>
-              <span class="circle"></span>
-            </div>
             <figure class="pic">
               <img src="http://placehold.it/150x100" alt="Макет Sedona">
             </figure>
@@ -115,55 +112,30 @@
           </article>
 
           <article class="catalog-item">
-            <div class="top-line">
-              <span class="circle"></span>
-              <span class="circle"></span>
-              <span class="circle"></span>
-            </div>
             <figure class="pic">
               <img src="http://placehold.it/150x100" alt="Макет Pink">
             </figure>
           </article>
 
           <article class="catalog-item">
-            <div class="top-line">
-              <span class="circle"></span>
-              <span class="circle"></span>
-              <span class="circle"></span>
-            </div>
             <figure class="pic">
               <img src="http://placehold.it/150x100" alt="Макет Barbershop">
             </figure>
           </article>
 
           <article class="catalog-item">
-            <div class="top-line">
-              <span class="circle"></span>
-              <span class="circle"></span>
-              <span class="circle"></span>
-            </div>
             <figure class="pic">
               <img src="http://placehold.it/150x100" alt="Макет Mishka">
             </figure>
           </article>
 
           <article class="catalog-item">
-            <div class="top-line">
-              <span class="circle"></span>
-              <span class="circle"></span>
-              <span class="circle"></span>
-            </div>
             <figure class="pic">
               <img src="http://placehold.it/150x100" alt="Макет A+">
             </figure>
           </article>
 
           <article class="catalog-item">
-            <div class="top-line">
-              <span class="circle"></span>
-              <span class="circle"></span>
-              <span class="circle"></span>
-            </div>
             <figure class="pic">
               <img src="http://placehold.it/150x100" alt="Макет Кваст">
             </figure>
