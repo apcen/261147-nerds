@@ -6,7 +6,15 @@ body {
   color: #283136;
 }
 
-h3 {
+h1 {
+  font-size: 55px;
+  line-height: 30px;
+  font-family: "Roboto";
+  font-weight: bold;
+  color: #000000;
+}
+
+h2 {
   font-size: 24px;
   line-height: 30px;
   font-family: "Roboto";
@@ -14,7 +22,7 @@ h3 {
   color: #000000;
 }
 
-h4 {
+h3 {
   font-size: 16px;
   line-height: 24px;
   font-family: "Roboto";
@@ -22,10 +30,244 @@ h4 {
   color: #000000;
 }
 
-.slogan {
+.lead {
   font-size: 55px;
   line-height: 55px;
   font-family: "Roboto";
   font-weight: bolder;
   color: #000000;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.container {
+  width: 1160px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.main-header {
+  margin-bottom: 80px;
+  padding-top: 50px;
+}
+
+.header-top {
+  margin-bottom: 20px;
+}
+
+.logo {
+  float: left;
+  width: 160px;
+}
+
+.main-nav {
+  float: left;
+  width: 440px;
+  margin-left: 200px;
+}
+
+.shopping-cart {
+  float: right;
+  width: 160px;
+}
+
+.main-header .left {
+  float: left;
+  width: 400px;
+}
+
+.main-header .lead {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.main-header .description {
+  max-width: 360px;
+  margin-bottom: 40px;
+}
+
+.main-header .slider {
+  float: right;
+  width: 760px;
+}
+
+.slider .pic {
+  float: right;
+  width: 698px;
+  margin: 0;
+}
+
+.main-header h1.title {
+  margin-top: 80px;
+  margin-bottom: 110px;
+  text-align: center;
+}
+
+.features {
+  padding-bottom: 80px;
+}
+
+.feature-item {
+  float: left;
+  width: 300px;
+  margin-right: 100px;
+}
+
+.feature-item:last-child {
+  margin-right: 0;
+}
+
+.feature-item .pic {
+  width: 300px;
+  margin: 0;
+  margin-bottom: 25px;
+}
+
+.feature-item .title {
+  margin-bottom: 25px;
+}
+
+.feature-item .description {
+  max-width: 260px;
+  margin-bottom: 30px;
+}
+
+.about {
+  padding-top: 40px;
+  padding-bottom: 80px;
+}
+
+.about .left {
+  float: left;
+  width: 660px;
+}
+
+.about .lead {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  font-size: 45px;
+}
+
+.about .description {
+  margin-bottom: 45px;
+}
+
+.about h3.title {
+  margin-bottom: 30px;
+}
+
+.strengths {
+  float: right;
+  width: 360px;
+  text-align: center;
+}
+
+.strengths .pic {
+  margin: 0;
+  margin-bottom: 40px;
+}
+
+.strengths h3.title {
+  margin-bottom: 50px;
+}
+
+.strengths-item {
+  float: left;
+  width: 100px;
+  margin-right: 20px;
+}
+
+.strengths-item:last-child {
+  margin-right: 0;
+}
+
+.clients {
+  min-height: 180px;
+  margin-bottom: 80px;
+  font-size: 0;
+  text-align: center;
+}
+
+.clients .pic {
+  display: inline-block;
+  margin: 0;
+  margin-right: 100px;
+  vertical-align: middle;
+}
+
+.clients .pic:last-child {
+  margin-right: 0;
+}
+
+.map {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.contacts {
+  width: 320px;
+  padding: 50px;
+}
+
+.social {
+  margin-top: 70px;
+  margin-bottom: 70px;
+}
+
+.social-btns {
+  float: left;
+  width: 260px;
+}
+
+.promo-text {
+  float: left;
+  width: 560px;
+  margin-left: 140px;
+}
+
+.promo-text .slogan {
+  font-size: 36px;
+}
+
+.characteristics {
+    float: left;
+    width: 260px;
+}
+
+.catalog {
+  float: right;
+  width: 760px;
+  font-size: 0;
+}
+
+.catalog-top {
+  margin-bottom: 50px;
+  font-size: 16px;
+}
+
+.catalog-item {
+  display: inline-block;
+  width: 360px;
+  margin-right: 0;
+  margin-bottom: 35px;
+  font-size: 16px;
+  vertical-align: top;
+}
+
+.catalog-item:nth-child(2n) {
+  margin-right: 40px;
+}
+
+.catalog-item .pic {
+  margin: 0;
+}
+
+.catalog-pages {
+  margin-top: 25px;
+  margin-bottom: 60px;
+  font-size: 16px;
 }

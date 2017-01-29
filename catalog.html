@@ -3,18 +3,19 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
+    <link href="css/styles.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
       <div class="container">
-        <nav class="header-top">
+        <nav class="header-top clearfix">
           <a class="logo" href="#">
             <img src="img/header-logo.png" width="160" height="65" alt="Логотип">
           </a>
           <ul class="main-nav">
             <li><a href="#">Студия</a></li>
             <li><a href="#">Клиенты</a></li>
-            <li><a href="#">Магазин</a></li>
+            <li><a class="active">Магазин</a></li>
             <li><a href="#">Контакты</a></li>
           </ul>
           <div class="shopping-cart">
@@ -26,78 +27,97 @@
     </header>
 
     <main>
-      <div class="container">
-        <form class="characteristics">
-          <fieldset class="cost">
-            <legend class="title">Стоимость:</legend>
-            <div class="slider">
-              <span class="mark"></span>
-              <span class="mark"></span>
-            </div>
-            <label>
-              от
-              <input type="text" name="start-value" value="0" readonly>
-            </label>
-            <label>
-              до
-              <input type="text" name="finish-value" value="15000" readonly>
-            </label>
-          </fieldset>
-          <fieldset class="grid">
-            <legend class="title">Сетка:</legend>
-            <label>
-              <input type="radio" name="grid-item" value="responsive" checked>
-              Адаптивная
-            </label>
-            <br>
-            <label>
-              <input type="radio" name="grit-item" value="fixed">
-              Фиксированная
-            </label>
-            <br>
-            <label>
-              <input type="radio" name="grid-item" value="rubber">
-              Резиновая
-            </label>
-          </fieldset>
+      <div class="container clearfix">
+        <aside class="characteristics">
+          <form action="#" method="get">
+            <fieldset class="cost">
+              <legend class="title">Стоимость:</legend>
+              <div class="slider">
+                <span class="mark"></span>
+                <span class="mark"></span>
+              </div>
+              <label>
+                от
+                <input type="text" name="start-value" value="0" readonly>
+              </label>
+              <label>
+                до
+                <input type="text" name="finish-value" value="15000" readonly>
+              </label>
+            </fieldset>
 
-          <fieldset class="features">
-            <legend>Особенности: </legend>
-            <label>
-              <input type="checkbox" name="slider" checked>
-              Cлайдер
-            </label>
-            <br>
-            <label>
-              <input type="checkbox" name="features-block">
-              Блок преимуществ
-            </label>
-            <br>
-            <label>
-              <input type="checkbox" name="news" checked>
-              Новости
-            </label>
-            <br>
-            <label>
-              <input type="checkbox" name="gallery">
-              Галерея
-            </label>
-            <br>
-            <label>
-              <input type="checkbox" name="trash">
-              Корзина
-            </label>
-          </fieldset>
-          <button class="btn" name="show">Показать</button>
-        </form>
+            <fieldset class="grid">
+              <legend class="title">Сетка:</legend>
+                <ul>
+                  <li>
+                    <label>
+                      <input type="radio" name="grid-item" value="responsive" checked>
+                      Адаптивная
+                    </label>
+                  </li>
+                  <li>
+                    <label>
+                      <input type="radio" name="grit-item" value="fixed">
+                      Фиксированная
+                    </label>
+                  </li>
+                  <li>
+                    <label>
+                      <input type="radio" name="grid-item" value="rubber">
+                      Резиновая
+                    </label>
+                  </li>
+                </ul>
+            </fieldset>
+
+            <fieldset class="features">
+              <legend>Особенности: </legend>
+                <ul>
+                  <li>
+                    <label>
+                      <input type="checkbox" name="slider" checked>
+                      Cлайдер
+                    </label>
+                  </li>
+                  <li>
+                    <label>
+                      <input type="checkbox" name="features-block">
+                      Блок преимуществ
+                    </label>
+                  </li>
+                  <li>
+                    <label>
+                      <input type="checkbox" name="news" checked>
+                      Новости
+                    </label>
+                  </li>
+                  <li>
+                    <label>
+                      <input type="checkbox" name="gallery">
+                      Галерея
+                    </label>
+                  </li>
+                  <li>
+                    <label>
+                      <input type="checkbox" name="trash">
+                      Корзина
+                    </label>
+                  </li>
+                </ul>
+            </fieldset>
+            <button class="btn" name="show">Показать</button>
+          </form>
+        </aside>
 
         <section class="catalog">
-          <b class="title">Сортировать:</b>
-          <a class="sort-mark" href="#">По цене</a>
-          <a class="sort-mark" href="#">По типу</a>
-          <a class="sort-mark" href="#">По названию</a>
-          <a class="sort-btn active">По убыванию</a>
-          <a class="sort-btn" href="#">По возрастанию</a>
+          <div class="catalog-top">
+            <b class="title">Сортировать:</b>
+            <a class="sort-mark" href="#">По цене</a>
+            <a class="sort-mark" href="#">По типу</a>
+            <a class="sort-mark" href="#">По названию</a>
+            <a class="sort-btn active"></a>
+            <a class="sort-btn" href="#"></a>
+          </div>
 
           <article class="catalog-item">
             <figure class="pic">
@@ -140,14 +160,14 @@
               <img src="img/img-kvast.jpg" width="360" height="576" alt="Макет Кваст">
             </figure>
           </article>
-        </section>
 
-        <div class="catalog-pages">
-          <a class="btn active">1</a>
-          <a class="btn" href="#">2</a>
-          <a class="btn" href="#">3</a>
-          <a class="btn" href="#">Следующая</a>
-        </div>
+          <div class="catalog-pages">
+            <a class="btn active">1</a>
+            <a class="btn" href="#">2</a>
+            <a class="btn" href="#">3</a>
+            <a class="btn" href="#">Следующая</a>
+          </div>
+        </section>
       </div>
     </main>
 
@@ -167,12 +187,16 @@
       </section>
 
       <section class="social">
-        <div class="container">
-          <a class="social-btn vk" href="#">Вконтакте</a>
-          <a class="social-btn fb" href="#">Фейсбук</a>
-          <a class="social-btn inst" href="#">Инстаграм</a>
-          <b class="slogan">Давайте дружить, это выгодно!</b>
-          <p class="description">Скидка 10% для друзей из социальных сетей.</p>
+        <div class="container clearfix">
+          <div class="social-btns">
+            <a class="social-btn vk" href="#">Вконтакте</a>
+            <a class="social-btn fb" href="#">Фейсбук</a>
+            <a class="social-btn inst" href="#">Инстаграм</a>
+          </div>
+          <div class="promo-text">
+            <b class="slogan">Давайте дружить, это выгодно!</b>
+            <p class="description">Скидка 10% для друзей из социальных сетей.</p>
+          </div>
         </div>
       </section>
     </footer>

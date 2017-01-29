@@ -3,36 +3,43 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
+    <link href="css/styles.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
-      <div class="container">
-        <nav class="header-top">
+      <div class="container clearfix">
+        <nav class="header-top clearfix">
           <a class="logo" href="#">
             <img src="img/header-logo.png" width="160" height="65" alt="Логотип">
           </a>
-          <ul class="main-nav">
-            <li><a href="#">Студия</a></li>
-            <li><a href="#">Клиенты</a></li>
-            <li><a href="#">Магазин</a></li>
-            <li><a href="#">Контакты</a></li>
-          </ul>
+          <nav class="main-nav">
+            <ul>
+              <li><a href="#">Студия</a></li>
+              <li><a href="#">Клиенты</a></li>
+              <li><a href="#">Магазин</a></li>
+              <li><a href="#">Контакты</a></li>
+            </ul>
+          </nav>
           <div class="shopping-cart">
             <a href="#">Корзина</a>
           </div>
         </nav>
 
         <section class="promo">
-          <b class="slogan">
-            Долго, дорого,<br>
-            скрупулезно.
-          </b>
-          <p class="description">
-            Математически выверенный дизайн<br>
-            для вашего сайта или мобильного приложения.
-          </p>
-          <a class="btn" href="#">Узнать больше</a>
-          <section class="slider">
+          <div class="left">
+            <p class="lead">
+              <b>
+                Долго, дорого,
+                скрупулезно.
+              </b>
+            </p>
+            <p class="description">
+              Математически выверенный дизайн
+              для вашего сайта или мобильного приложения.
+            </p>
+            <a class="btn" href="#">Узнать больше</a>
+          </div>
+          <section class="slider clearfix">
             <figure class="pic">
               <img src="img/slide1.png" width="698" height="413" alt="Изображение слайдера">
             </figure>
@@ -46,14 +53,14 @@
 
     <main>
       <div class="container">
-        <section class="features">
+        <section class="features clearfix">
           <article class="feature-item">
             <figure class="pic">
               <img src="img/illustration-1.jpg" width="300" height="146" alt="Веб-сайты">
             </figure>
-            <h3 class="title">Веб-сайты</h3>
+            <h2 class="title">Веб-сайты</h2>
             <p class="description">
-              Мир никогда не будет прежним<br>
+              Мир никогда не будет прежним
               после того, как увидит ваш сайт!
             </p>
             <a class="btn" href="#">Заказать</a>
@@ -63,9 +70,9 @@
             <figure class="pic">
               <img src="img/illustration-2.jpg" width="300" height="146" alt="Приложения">
             </figure>
-            <h3 class="title">Приложения</h3>
+            <h2 class="title">Приложения</h2>
             <p class="description">
-              Покорите топ-10 приложений в<br>
+              Покорите топ-10 приложений в
               AppStore и Google Play
             </p>
             <a class="btn" href="#">Заказать</a>
@@ -75,39 +82,43 @@
             <figure class="pic">
               <img src="img/illustration-3.jpg" width="300" height="146" alt="Презентации">
             </figure>
-            <h3 class="title">Презентации</h3>
+            <h2 class="title">Презентации</h2>
             <p class="description">
-              Вы даже не подозреваете,<br>
+              Вы даже не подозреваете,
               насколько вы изумительны!
             </p>
             <a class="btn" href="#">Заказать</a>
           </article>
         </section>
 
-        <section class="about">
-          <b class="slogan">
-            Мы - маленькая, но гордая<br>
-            дизайн-студия из Краснодара.
-          </b>
-          <p class="description">
-            Исповедуем принципы минимализма и чистоты. Ставим математический расчет<br>
-            превыше креатива. Работаем не покладая рук, как роботы.
-          </p>
+        <section class="about clearfix">
+          <div class="left">
+            <p class="lead">
+              <b>
+                Мы - маленькая, но гордая
+                дизайн-студия из Краснодара.
+              </b>
+            </p>
+            <p class="description">
+              Исповедуем принципы минимализма и чистоты. Ставим математический расчет
+              превыше креатива. Работаем не покладая рук, как роботы.
+            </p>
 
-          <section class="orders">
-            <h4 class="title">Выполняем заказы на разработку:</h4>
-            <ul class="list">
-              <li>Веб-сайтов любой сложности</li>
-              <li>Мобильных приложений для iOS и Android</li>
-              <li>Слайдшоу и видео для корпоративных презентаций</li>
-            </ul>
-          </section>
+            <section class="orders">
+              <h3 class="title">Выполняем заказы на разработку:</h3>
+              <ul class="list">
+                <li>Веб-сайтов любой сложности</li>
+                <li>Мобильных приложений для iOS и Android</li>
+                <li>Слайдшоу и видео для корпоративных презентаций</li>
+              </ul>
+            </section>
+          </div>
 
-          <section class="strengths">
+          <section class="strengths clearfix">
             <figure class="pic">
               <img src="img/nerds-illustration.jpg" width="360" height="208" alt="Студия Нёрдс">
             </figure>
-            <h4 class="title">С 2004 года любим точность во всем:</h4>
+            <h3 class="title">С 2004 года любим точность во всем:</h3>
             <div class="strengths-item">
               <b>146<sup>%</sup></b>
               <span>Уровень самоотдачи</span>
@@ -144,7 +155,7 @@
       <section class="map">
         <div class="container">
           <section class="contacts">
-            <h4 class="title">Nёrds Design Studio</h4>
+            <h3 class="title">Nёrds Design Studio</h3>
             <p>
               191186, Санкт-Петербург,<br>
               ул. Б. Конюшенная, д. 19/8
@@ -156,12 +167,16 @@
       </section>
 
       <section class="social">
-        <div class="container">
-          <a class="social-btn vk" href="#">Вконтакте</a>
-          <a class="social-btn fb" href="#">Фейсбук</a>
-          <a class="social-btn inst" href="#">Инстаграм</a>
-          <b class="slogan">Давайте дружить, это выгодно!</b>
-          <p class="description">Скидка 10% для друзей из социальных сетей.</p>
+        <div class="container clearfix">
+          <div class="social-btns">
+            <a class="social-btn vk" href="#">Вконтакте</a>
+            <a class="social-btn fb" href="#">Фейсбук</a>
+            <a class="social-btn inst" href="#">Инстаграм</a>
+          </div>
+          <div class="promo-text">
+            <b class="slogan">Давайте дружить, это выгодно!</b>
+            <p class="description">Скидка 10% для друзей из социальных сетей.</p>
+          </div>
         </div>
       </section>
     </footer>
