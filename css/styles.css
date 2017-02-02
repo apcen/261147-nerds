@@ -1,33 +1,35 @@
 body {
   font-size: 16px;
   line-height: 24px;
-  font-family: "Roboto", "Arial", sans-serif;;
-  font-weight: 400;
+  font-family: "Roboto", "Arial", sans-serif;
   color: #283136;
+  font-weight: 400;
 }
 
 h2 {
   font-size: 24px;
   line-height: 30px;
-  font-weight: 700;
   color: #000000;
+  font-weight: 700; 
 }
 
 h3 {
   font-size: 16px;
   line-height: 24px;
-  font-weight: 700;
   color: #000000;
+  font-weight: 700;
 }
 
 .slogan {
-  font-weight: 500;
   color: #000000;
+  font-weight: 500;
 }
 
 .clearfix::after {
   content: "";
+
   display: table;
+
   clear: both;
 }
 
@@ -38,12 +40,9 @@ h3 {
 }
 
 .main-header {
-  margin-bottom: 80px;
   padding-top: 49px;
-}
 
-.header-top {
-  margin-bottom: 18px;
+  border: 1px solid transparent;
 }
 
 .logo {
@@ -60,6 +59,10 @@ h3 {
 .shopping-cart {
   float: right;
   width: 160px;
+}
+
+.main-header .promo {
+  margin-top: 18px;
 }
 
 .main-header .left {
@@ -93,12 +96,16 @@ h3 {
 }
 
 .main-header h1.title {
-  margin-top: 80px;
-  margin-bottom: 110px;
+  margin-top: 81px;
+  margin-bottom: 101px;
+
+  font-size: 55px;
+  line-height: 55px;
   text-align: center;
 }
 
 .features {
+  padding-top: 80px;
   padding-bottom: 80px;
 }
 
@@ -156,6 +163,7 @@ h3 {
 .strengths {
   float: right;
   width: 360px;
+
   text-align: center;
 }
 
@@ -237,29 +245,38 @@ h3 {
   font-weight: 700;
 }
 
+.catalog-container {
+  margin-top: 60px;
+}
+
 .characteristics {
-    float: left;
-    width: 260px;
+  float: left;
+  width: 260px;
 }
 
 .catalog {
   float: right;
   width: 760px;
+
   font-size: 0;
 }
 
 .catalog-top {
-  margin-bottom: 50px;
-  font-size: 16px;
+  margin-bottom: 58px;
+
+  font-size: 18px;
+  line-height: 18px;
 }
 
 .catalog-item {
   display: inline-block;
   width: 360px;
   margin-right: 0;
-  margin-bottom: 35px;
-  font-size: 16px;
+  margin-bottom: 36px;
   vertical-align: top;
+
+  font-size: 16px;
+  line-height: 18px;
 }
 
 .catalog-item:nth-child(2n) {
@@ -271,7 +288,9 @@ h3 {
 }
 
 .catalog-pages {
-  margin-top: 25px;
+  margin-top: 24px;
   margin-bottom: 60px;
+
   font-size: 16px;
+  line-height: 18px;
 }
