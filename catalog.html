@@ -1,11 +1,13 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
-    <link href="css/styles.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
   </head>
+  
   <body>
     <header class="main-header">
       <div class="container">
@@ -13,16 +15,19 @@
           <a class="logo" href="index.html">
             <img src="img/header-logo.png" width="160" height="65" alt="Логотип">
           </a>
-          <ul class="main-nav">
-            <li><a href="#">Студия</a></li>
-            <li><a href="#">Клиенты</a></li>
-            <li><a class="active">Магазин</a></li>
-            <li><a href="#">Контакты</a></li>
-          </ul>
+          <nav class="main-nav">
+            <ul>
+              <li><a href="index.html">Студия</a></li>
+              <li><a href="#">Клиенты</a></li>
+              <li><a class="active">Магазин</a></li>
+              <li><a href="#">Контакты</a></li>
+            </ul>
+          </nav>
           <div class="shopping-cart">
             <a href="#">Корзина</a>
           </div>
         </nav>
+
         <h1 class="title">Магазин готовых шаблонов</h1>
       </div>
     </header>
@@ -34,45 +39,35 @@
             <fieldset class="cost">
               <legend class="title">Стоимость:</legend>
               <div class="slider">
-                <span class="mark"></span>
-                <span class="mark"></span>
+								<span class="mark"><span class="point"></span></span>
+                <span class="mark"><span class="point"></span></span>
               </div>
-              <label>
-                от
-                <input type="text" name="start-value" value="0" readonly>
-              </label>
-              <label>
-                до
-                <input type="text" name="finish-value" value="15000" readonly>
-              </label>
+							<label for="start-value">от</label>
+							<input id="start-value" type="text" name="start-value" value="0" readonly>
+							<label for="finish-value">до</label>
+							<input id="finish-value" type="text" name="finish-value" value="15 000" readonly>
             </fieldset>
 
             <fieldset class="grid">
               <legend class="title">Сетка:</legend>
                 <ul>
                   <li>
-                    <label>
-                      <input type="radio" name="grid-item" value="responsive" checked>
-                      Адаптивная
-                    </label>
+										<input id="responsive" type="radio" name="grid-item" value="responsive" checked>
+										<label for="responsive">Адаптивная</label>
                   </li>
                   <li>
-                    <label>
-                      <input type="radio" name="grit-item" value="fixed">
-                      Фиксированная
-                    </label>
+										<input id="fixed" type="radio" name="grid-item" value="fixed">
+										<label for="fixed">Фиксированная</label>
                   </li>
                   <li>
-                    <label>
-                      <input type="radio" name="grid-item" value="rubber">
-                      Резиновая
-                    </label>
+										<input id="rubber" type="radio" name="grid-item" value="rubber">
+										<label for="rubber">Резиновая</label>
                   </li>
                 </ul>
             </fieldset>
 
             <fieldset class="features">
-              <legend>Особенности: </legend>
+              <legend class="title">Особенности:</legend>
                 <ul>
                   <li>
                     <label>
@@ -111,62 +106,136 @@
         </aside>
 
         <section class="catalog">
-          <div class="catalog-top">
+          <div class="catalog-top clearfix">
             <b class="title">Сортировать:</b>
-            <a class="sort-mark" href="#">По цене</a>
-            <a class="sort-mark" href="#">По типу</a>
-            <a class="sort-mark" href="#">По названию</a>
-            <a class="sort-btn active"></a>
-            <a class="sort-btn" href="#"></a>
+            <div class="right">
+							<a class="sort-mark active">По цене</a>
+							<a class="sort-mark" href="#">По типу</a>
+							<a class="sort-mark" href="#">По названию</a>
+							<a class="sort-btn active"></a>
+							<a class="sort-btn" href="#"></a>
+						</div>
           </div>
 
           <article class="catalog-item">
+           	<div class="top-line">
+           		<span class="line-mark"></span>
+           		<span class="line-mark"></span>
+           		<span class="line-mark"></span>
+           	</div>
             <figure class="pic">
               <img src="img/img-sedona.jpg" width="360" height="576" alt="Макет Sedona">
             </figure>
-            <h3 class="title">Sedona</h3>
-            <p class="description">
-              Информационный сайт<br>
-              для туристов
-            </p>
-            <a class="btn" href="#">9 900 руб.</a>
+            <div class="item-description">
+							<h3 class="title">Sedona</h3>
+							<p class="description">
+								Информационный сайт<br>
+								для туристов
+							</p>
+							<a class="btn" href="#">9 900 руб.</a>
+						</div>
           </article>
 
           <article class="catalog-item">
+           <div class="top-line">
+           		<span class="line-mark"></span>
+           		<span class="line-mark"></span>
+           		<span class="line-mark"></span>
+           	</div>
             <figure class="pic">
               <img src="img/img-pink.jpg" width="360" height="576" alt="Макет Pink">
             </figure>
+            <div class="item-description">
+							<h3 class="title">Pink App</h3>
+							<p class="description">
+								Продуктовый лендинг<br>
+								приложения для iOS и Android
+							</p>
+							<a class="btn" href="#">9 900 руб.</a>
+						</div>
           </article>
 
           <article class="catalog-item">
+           <div class="top-line">
+           		<span class="line-mark"></span>
+           		<span class="line-mark"></span>
+           		<span class="line-mark"></span>
+           	</div>
             <figure class="pic">
               <img src="img/img-barbershop.jpg" width="360" height="576" alt="Макет Barbershop">
             </figure>
+            <div class="item-description">
+							<h3 class="title">Barbershop</h3>
+							<p class="description">
+								Сайт салоны красоты.<br>
+								Для мужчин, да.
+							</p>
+							<a class="btn" href="#">9 900 руб.</a>
+						</div>
           </article>
 
           <article class="catalog-item">
+           <div class="top-line">
+           		<span class="line-mark"></span>
+           		<span class="line-mark"></span>
+           		<span class="line-mark"></span>
+           	</div>
             <figure class="pic">
               <img src="img/img-mishka.jpg" width="360" height="576" alt="Макет Mishka">
             </figure>
+            <div class="item-description">
+							<h3 class="title">MISHKA</h3>
+							<p class="description">
+								Интернет-магазин<br>
+								вязаных игрушек
+							</p>
+							<a class="btn" href="#">9 900 руб.</a>
+						</div>
           </article>
 
           <article class="catalog-item">
+           <div class="top-line">
+           		<span class="line-mark"></span>
+           		<span class="line-mark"></span>
+           		<span class="line-mark"></span>
+           	</div>
             <figure class="pic">
               <img src="img/img-aplus.jpg" width="360" height="576" alt="Макет A+">
             </figure>
+            <div class="item-description">
+							<h3 class="title">A Plus</h3>
+							<p class="description">
+								Лендинг курсов повышения<br>
+								квалификации
+							</p>
+							<a class="btn" href="#">9 900 руб.</a>
+						</div>
           </article>
 
           <article class="catalog-item">
+           <div class="top-line">
+           		<span class="line-mark"></span>
+           		<span class="line-mark"></span>
+           		<span class="line-mark"></span>
+           	</div>
             <figure class="pic">
               <img src="img/img-kvast.jpg" width="360" height="576" alt="Макет Кваст">
             </figure>
+            <div class="item-description">
+							<h3 class="title">КВАСТ</h3>
+							<p class="description">
+								Промо-сайт производителя<br>
+								крафтового кваса
+							</p>
+							<a class="btn" href="#">9 900 руб.</a>
+						</div>
           </article>
 
           <div class="catalog-pages">
             <a class="btn active">1</a>
             <a class="btn" href="#">2</a>
             <a class="btn" href="#">3</a>
-            <a class="btn" href="#">Следующая</a>
+            <a class="btn next" href="#">Следующая</a>
           </div>
         </section>
       </div>
@@ -176,7 +245,7 @@
       <section class="map">
         <div class="container">
           <section class="contacts">
-            <h4 class="title">Nёrds Design Studio</h4>
+            <h3 class="title">Nёrds Design Studio</h3>
             <p>
               191186, Санкт-Петербург,<br>
               ул. Б. Конюшенная, д. 19/8
@@ -190,9 +259,15 @@
       <section class="social">
         <div class="container clearfix">
           <div class="social-btns">
-            <a class="social-btn vk" href="#">Вконтакте</a>
-            <a class="social-btn fb" href="#">Фейсбук</a>
-            <a class="social-btn inst" href="#">Инстаграм</a>
+            <a class="social-btn">
+              <span class="icon vk" href="#">Вконтакте</span>
+            </a>
+            <a class="social-btn">
+              <span class="icon fb" href="#">Фейсбук</span>
+            </a>
+            <a class="social-btn">
+              <span class="icon inst" href="#">Инстаграм</span>
+            </a>
           </div>
           <div class="promo-text">
             <b class="slogan">Давайте дружить, это выгодно!</b>

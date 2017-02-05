@@ -3,9 +3,11 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
-    <link href="css/styles.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
   </head>
+
   <body>
     <header class="main-header">
       <div class="container clearfix">
@@ -17,7 +19,7 @@
             <ul>
               <li><a href="#">Студия</a></li>
               <li><a href="#">Клиенты</a></li>
-              <li><a href="#">Магазин</a></li>
+              <li><a href="catalog.html">Магазин</a></li>
               <li><a href="#">Контакты</a></li>
             </ul>
           </nav>
@@ -35,7 +37,7 @@
               </b>
             </p>
             <p class="description">
-              Математически выверенный дизайн
+              Математически выверенный дизайн<br>
               для вашего сайта или мобильного приложения.
             </p>
             <a class="btn" href="#">Узнать больше</a>
@@ -44,9 +46,11 @@
             <figure class="pic">
               <img src="img/slide1.png" width="698" height="413" alt="Изображение слайдера">
             </figure>
-            <button class="btn"></button>
-            <button class="btn"></button>
-            <button class="btn"></button>
+            <div class="slider-btns">
+              <button class="slider-btn"></button>
+              <button class="slider-btn"></button>
+              <button class="slider-btn"></button>
+            </div>
           </section>
         </section>
       </div>
@@ -62,7 +66,7 @@
             <h2 class="title">Веб-сайты</h2>
             <p class="description">
               Мир никогда не будет прежним
-              после того, как увидит ваш сайт!
+              после того как увидит ваш сайт!
             </p>
             <a class="btn" href="#">Заказать</a>
           </article>
@@ -94,12 +98,10 @@
 
         <section class="about clearfix">
           <div class="left">
-            <p class="slogan">
-              <b>
-                Мы - маленькая, но гордая
-                дизайн-студия из Краснодара.
-              </b>
-            </p>
+            <b class="slogan">
+              Мы — маленькая, но гордая
+              дизайн-студия из Краснодара.
+            </b>
             <p class="description">
               Исповедуем принципы минимализма и чистоты. Ставим математический расчет
               превыше креатива. Работаем не покладая рук, как роботы.
@@ -137,16 +139,24 @@
 
         <section class="clients">
           <figure class="pic">
-            <img src="img/logo-1.png" width="199" height="68" alt="HTML Academy">
+            <a href="#">
+              <img src="img/logo-1.png" width="199" height="68" alt="HTML Academy">
+            </a>
           </figure>
           <figure class="pic">
-            <img src="img/logo-2.png" width="209" height="90" alt="Barbershop Borodinski">
+            <a href="#">
+              <img src="img/logo-2.png" width="209" height="90" alt="Barbershop Borodinski">
+            </a>
           </figure>
           <figure class="pic">
-            <img src="img/logo-3.png" width="185" height="52" alt="Pink">
+            <a href="#">
+              <img src="img/logo-3.png" width="185" height="52" alt="Pink">
+            </a>
           </figure>
           <figure class="pic">
-            <img src="img/logo-4.png" width="173" height="84" alt="Mishka">
+            <a href="#">
+              <img src="img/logo-4.png" width="173" height="84" alt="Mishka">
+            </a>
           </figure>
         </section>
       </div>
@@ -170,9 +180,15 @@
       <section class="social">
         <div class="container clearfix">
           <div class="social-btns">
-            <a class="social-btn vk" href="#">Вконтакте</a>
-            <a class="social-btn fb" href="#">Фейсбук</a>
-            <a class="social-btn inst" href="#">Инстаграм</a>
+            <a class="social-btn">
+              <span class="icon vk" href="#">Вконтакте</span>
+            </a>
+            <a class="social-btn">
+              <span class="icon fb" href="#">Фейсбук</span>
+            </a>
+            <a class="social-btn">
+              <span class="icon inst" href="#">Инстаграм</span>
+            </a>
           </div>
           <div class="promo-text">
             <b class="slogan">Давайте дружить, это выгодно!</b>
