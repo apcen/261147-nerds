@@ -73,34 +73,24 @@
               <legend class="title">Особенности:</legend>
                 <ul>
                   <li>
-                    <label>
-                      <input type="checkbox" name="slider" checked>
-                      Cлайдер
-                    </label>
+										<input id="slider" type="checkbox" name="slider" checked>
+										<label for="slider">Cлайдер</label>
                   </li>
                   <li>
-                    <label>
-                      <input type="checkbox" name="features-block">
-                      Блок преимуществ
-                    </label>
+										<input id="features=block" type="checkbox" name="features-block">
+										<label for="features=block">Блок преимуществ</label>
                   </li>
                   <li>
-                    <label>
-                      <input type="checkbox" name="news" checked>
-                      Новости
-                    </label>
+										<input id="news" type="checkbox" name="news" checked>
+										<label for="news">Новости</label>
                   </li>
                   <li>
-                    <label>
-                      <input type="checkbox" name="gallery">
-                      Галерея
-                    </label>
+										<input id="gallery" type="checkbox" name="gallery">
+										<label for="gallery">Галерея</label>
                   </li>
                   <li>
-                    <label>
-                      <input type="checkbox" name="trash">
-                      Корзина
-                    </label>
+										<input id="trash" type="checkbox" name="trash">
+										<label for="trash">Корзина</label>
                   </li>
                 </ul>
             </fieldset>
@@ -249,5 +239,24 @@
         </div>
       </section>
     </footer>
+    
+    <section class="contact-block">
+    	<h2 class="title">Напишите нам</h2>
+    	<form class="contact-form clearfix" action="#" method="post">
+    		<div class="form-left">
+					<label for="user-name">Ваше имя:</label>
+					<input id="user-name" type="text" name="user-name" placeholder="Представьтесь, пожалуйста">
+				</div>
+   			<div class="form-right">
+					<label for="user-email">Ваш e-mail:</label>
+					<input id="user-email" type="text" name="user-email" placeholder="Для отправки ответа">
+				</div>
+   			<div class="form-bottom">
+					<label for="user-letter">Текст письма:</label>
+					<textarea id="user-letter" name="user-letter" rows="5" placeholder="В свободной форме" ></textarea>
+					<button class="btn">Отправить</button>
+				</div>
+    	</form>
+    </section>
   </body>
 </html>
