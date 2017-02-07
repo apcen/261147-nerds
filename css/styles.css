@@ -10,20 +10,16 @@ body {
   background-color: #ffffff;
 }
 
-h2 {
-  font-weight: 700; 
-  font-size: 24px;
-  line-height: 30px;
-  color: #000000;
-}
-
-h3 {
-  font-weight: 700;
-  color: #000000;
+img {
+	max-width: 100%;
+	height: auto;
 }
 
 .slogan {
   font-weight: 500;
+	font-size: 36px;
+	line-height: 36px;
+	font-family: "Roboto", "Arial", sans-serif;
   color: #000000;
 }
 
@@ -85,8 +81,10 @@ h3 {
   display: inline-block;
 	vertical-align: top;
 	
+	font-weight: 500;
   font-size: 16px;
   line-height: 30px;
+	font-family: "Roboto", "Arial", sans-serif;
   text-transform: uppercase;
 }
 
@@ -99,6 +97,7 @@ h3 {
 
   color: #000000;
   text-decoration: none;
+	
   cursor: pointer;
 }
 
@@ -148,8 +147,10 @@ h3 {
   padding-left: 42px;
 	vertical-align: top;
 	
+	font-weight: 500;
   font-size: 16px;
   line-height: 30px;
+	font-family: "Roboto", "Arial", sans-serif;
   text-transform: uppercase;
   color: #000000;
   text-decoration: none;
@@ -184,92 +185,148 @@ h3 {
   opacity: 1;
 }
 
-.main-header .promo {
-  margin-top: 15px;
+.slider {
+	position: relative;
+	
+	width: 1160px;
+	height: 427px;
 }
 
-.main-header .left {
-  float: left;
-  width: 400px;
+.slider-controls {
+	position: absolute;
+	bottom: 95px;
+	left: 50%;
+	z-index: 100;
+	
+	width: 200px;
+	height: 18px;
+	margin-left: -100px;
+	
+	text-align: center;
 }
 
-.main-header .slogan {
-  margin-top: 57px;
-  margin-bottom: 28px;
-
-  font-weight: 400;
-  font-size: 55px;
-  line-height: 55px;
+.slider input[type="radio"] {
+	position: absolute;
+	
+	opacity: 0;
 }
 
-.main-header b {
-  font-weight: 500;
+.slider-controls label {
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	margin-right: 13px;
+	vertical-align: top;
+	
+	font-size: 0;
+	
+	background-color: #ffffff;
+	border: 4px solid #ffffff;
+	border-radius: 50%;
+	cursor: pointer;
 }
 
-.main-header .description {
-  max-width: 365px;
-  margin-bottom: 40px;
+.slider-controls label:last-child {
+	margin-right: 0;
 }
 
-.promo .btn {
-  display: inline-block;
-  padding: 16px 54px;
-
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 18px;
-  text-transform: uppercase;
-  color: #ffffff;
-  text-decoration: none;
-
-  background-color: #fb565a;
+#btn-1:checked ~ .slider-controls label[for="btn-1"],
+#btn-2:checked ~ .slider-controls label[for="btn-2"],
+#btn-3:checked ~ .slider-controls label[for="btn-3"] {
+	background-image: url("../img/sprite.png");
+	background-repeat: no-repeat;
+	background-position: -259px -5px;
 }
 
-.promo .btn:hover {
-  background-color: #e74246;
+.slide {
+	position: absolute;
+	top: 0;
+	left: 0;
+	
+	width: 100%;
+	height: 100%;
+	
+	overflow: hidden;
 }
 
-.promo .btn:active {
-  color: rgba(255, 255, 255, 0.3);
-
-  background-color: #d7373b;
+.slide-text {
+	width: 560px;
+	padding: 73px 0;
+	
+	color: #283136;
 }
 
-.main-header .slider {
-  position: relative;
-
-  float: right;
-  width: 730px;
+.slide-text .title {
+	display: block;
+	margin-bottom: 28px;
+	
+	font-weight: 500;
+	font-size: 55px;
+	line-height: 55px;
+	font-family: "Roboto", "Arial", sans-serif;
+	color: #000000;
 }
 
-.slider .pic {
-  float: right;
-  width: 698px;
-  height: 413px;
-  margin: 0;
-  margin-right: 31px;
+.slide-text .btn {
+	display: block;
+	width: 240px;
+	margin-top: 39px;
+	padding: 16px 0;
+	
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 18px;
+	text-transform: uppercase;
+	color: #ffffff;
+	text-align: center;
+	text-decoration: none;
+	
+	background-color: #fb565a;
+	border-radius: 3px;
 }
 
-.slider-btns {
-  position: absolute;
-  top: 71.7%;
-  left: 14.5%;
+.slide-text .btn:hover {
+	background-color: #e74246;
 }
 
-.slider-btn {
-  content: "";
-
-  width: 18px;
-  height: 18px;
-  margin-right: 13px;
-
-  background-color: #ffffff;
-  border: none;
-  border-radius: 10px;
+.slide-text .btn:active {
+	color: rgba(255, 255, 255, 0.3);
+	
+	background-color: #d7373b;
 }
 
-.slider-btn:last-child {
-  margin-right: 0;
+.slide:nth-child(1) {
+	background-image: url("../img/slide1.png");
+	background-repeat: no-repeat;
+	background-position: 431px 17px;
+}
+
+.slide {
+	display: none;
+}
+
+#btn-1:checked ~ .slides .slide:nth-child(1) {
+	display: block;
+}
+
+#btn-2:checked ~ .slides .slide:nth-child(2) {
+	display: block;
+}
+
+#btn-3:checked ~ .slides .slide:nth-child(3) {
+	display: block;
+}
+
+.slide:nth-child(2) {
+	background-image: url("../img/slide2.png");
+	background-repeat: no-repeat;
+	background-position: 497px 0;
+}
+
+.slide:nth-child(3) {
+	background-image: url("../img/slide3.png");
+	background-repeat: no-repeat;
+	background-position: 400px 15px;
 }
 
 .main-header h1.title {
@@ -279,6 +336,7 @@ h3 {
   font-weight: 500;
   font-size: 55px;
   line-height: 55px;
+	font-family: "Roboto", "Arial", sans-serif;
   text-align: center;
 }
 
@@ -308,8 +366,13 @@ h3 {
 .feature-item .title {
   margin-top: 0;
   margin-bottom: 17px;
-
-  text-transform: uppercase;
+	
+	font-weight: 700; 
+  font-size: 24px;
+  line-height: 30px;
+	font-family: "Roboto", "Arial", sans-serif;
+	text-transform: uppercase;
+  color: #000000;
 }
 
 .feature-item .description {
@@ -325,6 +388,7 @@ h3 {
   font-weight: 500;
   font-size: 16px;
   line-height: 18px;
+	font-family: "Roboto", "Arial", sans-serif;
   text-transform: uppercase;
   color: #ffffff;
   text-decoration: none;
@@ -371,8 +435,8 @@ h3 {
 }
 
 .about {
-  padding-top: 38px;
-  padding-bottom: 75px;
+  padding-top: 39px;
+  padding-bottom: 74px;
 
   border-bottom: 2px solid #eeeeee;
 }
@@ -385,11 +449,13 @@ h3 {
 .about .slogan {
   display: block;
   margin-top: 33px;
-  margin-bottom: 33px;
+  margin-bottom: 34px;
 
   font-weight: 500;
   font-size: 45px;
   line-height: 45px;
+	font-family: "Roboto", "Arial", sans-serif;
+	color: #000000;
 }
 
 .about .description {
@@ -397,14 +463,22 @@ h3 {
 }
 
 .about .title {
-  font-weight: 500;
+  font-weight: 700;
   font-size: 16px;
   line-height: 24px;
+	font-family: "Roboto", "Arial", sans-serif;
   text-transform: uppercase;
+	color: #000000;
 }
 
-.orders h3.title {
+.orders .title {
   margin-bottom: 24px;
+	
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 24px;
+	font-family: "Roboto", "Arial", sans-serif;
+  color: #000000;
 }
 
 .orders .list {
@@ -450,10 +524,15 @@ h3 {
   margin-bottom: 30px;
 }
 
-.strengths h3.title {
+.strengths .title {
   margin-top: 0;
-  margin-bottom: 57px;
-
+  margin-bottom: 40px;
+	
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 24px;
+	font-family: "Roboto", "Arial", sans-serif;
+  color: #000000;
   text-align: center;
 }
 
@@ -470,13 +549,17 @@ h3 {
 .strengths-item b {
   font-weight: 700;
   font-size: 45px;
-  line-height: 10.06px;
+  line-height: 45px;
+	font-family: "Roboto", "Arial", sans-serif;
+	color: #000000;
 }
 
 .strengths-item sup {
   font-weight: 500;
   font-size: 26px;
-  line-height: 10.06px;
+  line-height: 26px;
+	font-family: "Roboto", "Arial", sans-serif;
+	color: #000000;
 }
 
 .strengths-item span {
@@ -485,13 +568,15 @@ h3 {
 
   font-size: 16px;
   line-height: 18px;
+	font-family: "Roboto", "Arial", sans-serif;
+	color: #000000;
   text-align: left;
 }
 
 .clients {
 	position: relative;
 	
-  margin-bottom: 80px;
+  margin-bottom: 78px;
   padding-top: 46px;
   padding-bottom: 46px;
 
@@ -505,8 +590,8 @@ h3 {
 	content: "";
 	position: absolute;
 	top: 64px;
-	left: 280px;
 	bottom: 64px;
+	left: 280px;
 	
 	width: 2px;
 	
@@ -523,9 +608,8 @@ h3 {
   box-sizing: border-box;
   vertical-align: middle;
 	
+	opacity: 0.2;
 	cursor: pointer;
-	
-  opacity: 0.2;
 }
 
 .clients .pic:hover {
@@ -586,14 +670,16 @@ h3 {
   background-color: #ffffff;
 }
 
-.contacts h3.title {
+.contacts .title {
   margin-top: 0;
   margin-bottom: 23px;
 
   font-weight: 700;
   font-size: 18px;
   line-height: 30px;
+	font-family: "Roboto", "Arial", sans-serif;
   text-transform: uppercase;
+	color: #000000;
 }
 
 .contacts p {
@@ -602,6 +688,7 @@ h3 {
   font-weight: 400;
   font-size: 16px;
   line-height: 18px;
+	font-family: "Roboto", "Arial", sans-serif;
   color: #666666;
 }
 
@@ -609,6 +696,7 @@ h3 {
   font-weight: 400;
   font-size: 16px;
   line-height: 18px;
+	font-family: "Roboto", "Arial", sans-serif;
   color: #666666;
   text-decoration: none;
 }
@@ -654,13 +742,12 @@ h3 {
   margin-right: 9px;
 	vertical-align: top;
 	
-  font-size: 0;
 	line-height: 78px;
   text-align: center;
-  cursor: pointer;
-
+	
   background-color: #e1e1e1;
   border-radius: 100px;
+	cursor: pointer;
 }
 
 .social-btn:last-child {
@@ -679,7 +766,7 @@ h3 {
   display: inline-block;
   vertical-align: middle;
 	
-	line-height: 78px;
+	font-size: 0;
 
   background-image: url("../img/sprite.png");
   background-repeat: no-repeat;
@@ -692,7 +779,7 @@ h3 {
 .fb {
   width: 12px;
   height: 22px;
-
+	
   background-position: -100px -5px;
 }
 
@@ -723,6 +810,8 @@ h3 {
   font-weight: 700;
   font-size: 36px;
   line-height: 36px;
+	font-family: "Roboto", "Arial", sans-serif;
+	color: #000000;
 }
 
 .promo-text .description {
@@ -761,7 +850,9 @@ h3 {
 	font-weight: 700;
 	font-size: 18px;
 	line-height: 30px;
+	font-family: "Roboto", "Arial", sans-serif;
 	text-transform: uppercase;
+	color: #000000;
 }
 
 .cost .title {
@@ -865,8 +956,8 @@ input[type="checkbox"]:disabled + label::before {
 .slider .main-line {
 	position: absolute;
 	top: 50%;
-	left: 10%;
 	right: 10%;
+	left: 10%;
 	z-index: 1;
 	
 	height: 2px;
@@ -879,8 +970,8 @@ input[type="checkbox"]:disabled + label::before {
 .slider .current-line {
 	position: absolute;
 	top: 0;
-	left: 0;
 	right: 73px;
+	left: 0;
 	z-index: 1;
 	
 	height: 2px;
@@ -941,6 +1032,7 @@ input[type="checkbox"]:disabled + label::before {
 	font-weight: 400;
 	font-size: 16px;
 	line-height: 22px;
+	font-family: "Roboto", "Arial", sans-serif;
 	color: #283136;
 	text-align: center;
 	
@@ -959,6 +1051,7 @@ input[type="checkbox"]:disabled + label::before {
 	font-weight: 400;
 	font-size: 16px;
 	line-height: 22px;
+	font-family: "Roboto", "Arial", sans-serif;
 	text-transform: uppercase;
 	color: #283136;
 }
@@ -969,11 +1062,11 @@ input[type="checkbox"]:disabled + label::before {
 
 	text-transform: uppercase;
 	color: #000000;
-	cursor: pointer;
 	
 	background-color: #eeeeee;
 	border: none;
 	border-radius: 3px;
+	cursor: pointer;
 }
 
 .characteristics .btn:hover {
@@ -995,7 +1088,8 @@ input[type="checkbox"]:disabled + label::before {
 }
 
 .catalog-top {
-  margin-bottom: 50px;
+  margin-bottom: 48px;
+	padding-top: 2px;
 
   font-size: 0;
 }
@@ -1004,6 +1098,7 @@ input[type="checkbox"]:disabled + label::before {
 	font-weight: 700;
 	font-size: 18px;
 	line-height: 18px;
+	font-family: "Roboto", "Arial", sans-serif;
 	text-transform: uppercase;
 	color: #000000;
 }
@@ -1023,12 +1118,13 @@ input[type="checkbox"]:disabled + label::before {
 	font-weight: 400;
 	font-size: 14px;
 	line-height: 18px;
+	font-family: "Roboto", "Arial", sans-serif;
 	text-transform: uppercase;
 	color: #000000;
 	text-decoration: none;
-	cursor: pointer;
 	
 	opacity: 0.3;
+	cursor: pointer;
 }
 
 .catalog-top .sort-mark:hover {
@@ -1088,17 +1184,20 @@ input[type="checkbox"]:disabled + label::before {
   display: inline-block;
   width: 360px;
   margin-right: 0;
-  margin-bottom: 36px;
+  margin-bottom: 35px;
 	padding-top: 40px;
   vertical-align: top;
 	
+	font-weight: 400;
   font-size: 16px;
   line-height: 18px;
+	font-family: "Roboto", "Arial", sans-serif;
+	color: #666666;
 	text-align: center;
 	
 	background-color: #e9e9e9;
-	border-top-left-radius: 5px;
 	border-top-right-radius: 5px;
+	border-top-left-radius: 5px;
 	cursor: pointer;
 }
 
@@ -1134,6 +1233,8 @@ input[type="checkbox"]:disabled + label::before {
 
 .catalog-item img {
 	display: block;
+	width: 360px;
+	height: 576px;
 	box-sizing: border-box;
 	
 	border: 1px solid #e5e5e5;
@@ -1149,6 +1250,8 @@ input[type="checkbox"]:disabled + label::before {
 	padding-top: 25px;
 	padding-bottom: 46px;
 	
+	word-break: break-all;
+	
 	background-color: #eeeeee;
 }
 
@@ -1163,8 +1266,19 @@ input[type="checkbox"]:disabled + label::before {
 	font-weight: 700;
 	font-size: 18px;
 	line-height: 30px;
+	font-family: "Roboto", "Arial", sans-serif;
 	text-transform: uppercase;
 	color: #000000;
+}
+
+.catalog-item a {
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 30px;
+	font-family: "Roboto", "Arial", sans-serif;
+	text-transform: uppercase;
+	color: #000000;
+	text-decoration: none;
 }
 
 .catalog-item .description {
@@ -1174,6 +1288,7 @@ input[type="checkbox"]:disabled + label::before {
 	font-weight: 400;
 	font-size: 16px;
 	line-height: 18px;
+	font-family: "Roboto", "Arial", sans-serif;
 	color: #666666;
 }
 
@@ -1185,6 +1300,7 @@ input[type="checkbox"]:disabled + label::before {
 	font-weight: 500;
 	font-size: 16px;
 	line-height: 18px;
+	font-family: "Roboto", "Arial", sans-serif;
 	text-transform: uppercase;
 	color: #ffffff;
 	text-decoration: none;
@@ -1201,8 +1317,9 @@ input[type="checkbox"]:disabled + label::before {
 }
 
 .catalog-pages {
-  margin-top: 22px;
+  margin-top: 25px;
   margin-bottom: 60px;
+	
 	font-size: 0;
 }
 
@@ -1218,6 +1335,7 @@ input[type="checkbox"]:disabled + label::before {
 	font-weight: 500;
   font-size: 16px;
   line-height: 18px;
+	font-family: "Roboto", "Arial", sans-serif;
 	text-transform: uppercase;
 	color: #000000;
 	text-align: center;
@@ -1262,7 +1380,7 @@ input[type="checkbox"]:disabled + label::before {
 	position: fixed;
 	top: 50%;
 	left: 50%;
-	z-index: 10;
+	z-index: 9000;
 	
 	width: 960px;
 	height: 590px;
@@ -1285,6 +1403,7 @@ input[type="checkbox"]:disabled + label::before {
 	font-weight: 500;
 	font-size: 45px;
 	line-height: 45px;
+	font-family: "Roboto", "Arial", sans-serif;
 	color: #000000;
 }
 
@@ -1306,6 +1425,8 @@ input[type="checkbox"]:disabled + label::before {
 	font-weight: 700;
 	font-size: 16px;
 	line-height: 18px;
+	font-family: "Roboto", "Arial", sans-serif;
+	color: #000000;
 }
 
 .contact-form input {
@@ -1397,6 +1518,8 @@ input[type="checkbox"]:disabled + label::before {
 	width: 21px;
 	height: 21px;
 	
+	font-size: 0;
+	
 	background-color: transparent;
 	border: none;
 	opacity: 0.3;
@@ -1433,4 +1556,17 @@ input[type="checkbox"]:disabled + label::before {
 
 .cross::after {
 	transform: rotate(135deg);
+}
+
+
+.overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 8000;
+	
+	width: 100%;
+	height: 100%;
+	
+	background-color: transparent;
 }

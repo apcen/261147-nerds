@@ -28,30 +28,60 @@
           </div>
         </nav>
 
-        <section class="promo clearfix">
-          <div class="left">
-            <p class="slogan">
-              <b>
-                Долго, дорого,
-                скрупулезно.
-              </b>
-            </p>
-            <p class="description">
-              Математически выверенный дизайн<br>
-              для вашего сайта или мобильного приложения.
-            </p>
-            <a class="btn" href="#">Узнать больше</a>
-          </div>
-          <section class="slider clearfix">
-            <figure class="pic">
-              <img src="img/slide1.png" width="698" height="413" alt="Изображение слайдера">
-            </figure>
-            <div class="slider-btns">
-              <button class="slider-btn"></button>
-              <button class="slider-btn"></button>
-              <button class="slider-btn"></button>
-            </div>
-          </section>
+        <section class="slider">
+        	<input id="btn-1" type="radio" name="toggle" checked>
+        	<input id="btn-2" type="radio" name="toggle">
+        	<input id="btn-3" type="radio" name="toggle">
+         	<div class="slider-controls">
+         		<label for="btn-1"></label>
+         		<label for="btn-2"></label>
+         		<label for="btn-3"></label>
+         	</div>
+         
+          <section class="slides">
+           	<div class="slide">
+           		<div class="slide-text">
+								<b class="title">
+										Долго, дорого,
+										скрупулезно.
+								</b>
+								<p class="description">
+									Математически выверенный дизайн<br>
+									для вашего сайта или мобильного приложения.
+								</p>
+								<a class="btn" href="#">Узнать больше</a>	
+							</div>
+						</div>
+											
+						<div class="slide">
+							<div class="slide-text">
+								<b class="title">
+									Любим математику
+									как никто другой
+								</b>
+								<p class="description">
+									Никакого креатива, только математические формулы<br> 
+									для расчета идеальных пропорций.
+								</p>
+								<a class="btn" href="#">Узнать больше</a>
+							</div>
+						</div>
+						
+						<div class="slide">
+							<div class="slide-text">
+								<b class="title">
+									Только ночь,<br>
+									только хардкор
+								</b>
+								<p class="description">
+									Работать днем, как все? Мы против этого.<br>
+									Ближе к полуночи работа только начинается.
+								</p>
+								<a class="btn" href="#">Узнать больше</a>
+							</div>
+						</div>
+
+					</section>
         </section>
       </div>
     </header>
@@ -180,14 +210,14 @@
       <section class="social">
         <div class="container clearfix">
           <div class="social-btns">
-            <a class="social-btn">
-              <span class="icon vk" href="#">Вконтакте</span>
+            <a class="social-btn" href="#">
+              <span class="icon vk">Вконтакте</span>
             </a>
-            <a class="social-btn">
-              <span class="icon fb" href="#">Фейсбук</span>
+            <a class="social-btn" href="#">
+              <span class="icon fb">Фейсбук</span>
             </a>
-            <a class="social-btn">
-              <span class="icon inst" href="#">Инстаграм</span>
+            <a class="social-btn" href="#">
+              <span class="icon inst">Инстаграм</span>
             </a>
           </div>
           <div class="promo-text">
@@ -201,7 +231,7 @@
     <section class="contact-block" hidden>
     	<h2 class="title">Напишите нам</h2>
     	<form class="contact-form clearfix" action="#" method="post">
-    		<button class="cross"></button>
+    		<button class="cross" type="button" title="Закрыть">Закрыть</button>
     		<div class="form-left">
 					<label for="user-name">Ваше имя:</label>
 					<input id="user-name" type="text" name="user-name" placeholder="Представьтесь, пожалуйста">
@@ -217,5 +247,6 @@
 				</div>
     	</form>
     </section>
+    <div class="overlay" hidden></div>
   </body>
 </html>
