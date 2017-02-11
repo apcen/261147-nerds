@@ -742,15 +742,24 @@ img {
 }
 
 .map {
-	padding-top: 53px;
-	padding-bottom: 55px;
+	width: 100%;
+	height: 419px;
 
 	background-image: url("../img/map.jpg");
 	background-repeat: no-repeat;
 	background-position: 50% 0%;
 }
 
+.map .container {
+	position: relative;
+	z-index: 10;
+}
+
 .contacts {
+	position: absolute;
+	top: 53px;
+	left: 20px;
+
 	width: 320px;
 	padding: 49px 49px;
 	box-sizing: border-box;
@@ -1540,7 +1549,7 @@ input[type="checkbox"]:disabled + label::before {
 	border-color: #000000;
 }
 
-.contact-form input:invalid {
+.contact-form input:focus:invalid {
 	color: #e74246;
 	
 	border: 2px solid #e74246;
@@ -1571,7 +1580,7 @@ input[type="checkbox"]:disabled + label::before {
 	border-color: #000000;
 }
 
-.form-bottom textarea:invalid {
+.form-bottom textarea:focus:invalid {
 	color: #e74246;
 	
 	border: 2px solid #e74246;
