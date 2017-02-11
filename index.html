@@ -1,46 +1,54 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Нёрдс</title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
-    <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/styles.css" rel="stylesheet">
-  </head>
+	<head>
+		<meta charset="utf-8">
+		<title>HTML Academy: Нёрдс</title>
+		<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+		<link href="css/normalize.css" rel="stylesheet">
+		<link href="css/styles.min.css" rel="stylesheet">
+	</head>
 
-  <body>
-    <header class="main-header">
-      <div class="container clearfix">
-        <nav class="header-top clearfix">
-          <a class="logo">
-            <img src="img/header-logo.png" width="160" height="65" alt="Логотип">
-          </a>
-          <nav class="main-nav">
-            <ul>
-              <li><a href="#">Студия</a></li>
-              <li><a href="#">Клиенты</a></li>
-              <li><a href="catalog.html">Магазин</a></li>
-              <li><a href="#">Контакты</a></li>
-            </ul>
-          </nav>
-          <div class="shopping-cart">
-            <a href="#">Корзина</a>
-          </div>
-        </nav>
+	<body>
+		<header class="main-header">
+			<div class="container clearfix">
+				<nav class="header-top clearfix">
+					<a class="logo">
+						<img src="img/header-logo.png" width="160" height="65" alt="Логотип">
+					</a>
+					<nav class="main-nav">
+						<ul>
+							<li>
+								<a href="#">Студия</a>
+							</li>
+							<li>
+								<a href="#">Клиенты</a>
+							</li>
+							<li>
+								<a href="catalog.html">Магазин</a>
+							</li>
+							<li>
+								<a href="#">Контакты</a>
+							</li>
+						</ul>
+					</nav>
+					<div class="shopping-cart">
+						<a href="#">Корзина</a>
+					</div>
+				</nav>
 
-        <section class="slider">
-        	<input id="btn-1" type="radio" name="toggle" checked>
-        	<input id="btn-2" type="radio" name="toggle">
-        	<input id="btn-3" type="radio" name="toggle">
-         	<div class="slider-controls">
-         		<label for="btn-1"></label>
-         		<label for="btn-2"></label>
-         		<label for="btn-3"></label>
-         	</div>
-         
-          <section class="slides">
-           	<div class="slide">
-           		<div class="slide-text">
+				<section class="slider">
+					<input id="btn-1" type="radio" name="toggle" checked>
+					<input id="btn-2" type="radio" name="toggle">
+					<input id="btn-3" type="radio" name="toggle">
+					<div class="slider-controls">
+						<label for="btn-1"></label>
+						<label for="btn-2"></label>
+						<label for="btn-3"></label>
+					</div>
+					
+					<section class="slides">
+						<div class="slide">
+							<div class="slide-text">
 								<b class="title">
 										Долго, дорого,
 										скрупулезно.
@@ -52,7 +60,7 @@
 								<a class="btn" href="#">Узнать больше</a>	
 							</div>
 						</div>
-											
+						
 						<div class="slide">
 							<div class="slide-text">
 								<b class="title">
@@ -82,171 +90,174 @@
 						</div>
 
 					</section>
-        </section>
-      </div>
-    </header>
+				</section>
+			</div>
+		</header>
 
-    <main>
-      <div class="container">
-        <section class="features clearfix">
-          <article class="feature-item">
-            <figure class="pic">
-              <img src="img/illustration-1.jpg" width="300" height="146" alt="Веб-сайты">
-            </figure>
-            <h2 class="title">Веб-сайты</h2>
-            <p class="description">
-              Мир никогда не будет прежним
-              после того как увидит ваш сайт!
-            </p>
-            <a class="btn" href="#">Заказать</a>
-          </article>
+		<main>
+			<div class="container">
+				<section class="features clearfix">
+					<article class="feature-item">
+						<figure class="pic">
+							<img src="img/illustration-1.jpg" width="300" height="146" alt="Веб-сайты">
+						</figure>
+						<h2 class="title">Веб-сайты</h2>
+						<p class="description">
+							Мир никогда не будет прежним
+							после того как увидит ваш сайт!
+						</p>
+						<a class="btn" href="#">Заказать</a>
+					</article>
 
-          <article class="feature-item">
-            <figure class="pic">
-              <img src="img/illustration-2.jpg" width="300" height="146" alt="Приложения">
-            </figure>
-            <h2 class="title">Приложения</h2>
-            <p class="description">
-              Покорите топ-10 приложений в
-              AppStore и Google Play
-            </p>
-            <a class="btn" href="#">Заказать</a>
-          </article>
+					<article class="feature-item">
+						<figure class="pic">
+							<img src="img/illustration-2.jpg" width="300" height="146" alt="Приложения">
+						</figure>
+						<h2 class="title">Приложения</h2>
+						<p class="description">
+							Покорите топ-10 приложений в
+							AppStore и Google Play
+						</p>
+						<a class="btn" href="#">Заказать</a>
+					</article>
 
-          <article class="feature-item">
-            <figure class="pic">
-              <img src="img/illustration-3.jpg" width="300" height="146" alt="Презентации">
-            </figure>
-            <h2 class="title">Презентации</h2>
-            <p class="description">
-              Вы даже не подозреваете,
-              насколько вы изумительны!
-            </p>
-            <a class="btn" href="#">Заказать</a>
-          </article>
-        </section>
+					<article class="feature-item">
+						<figure class="pic">
+							<img src="img/illustration-3.jpg" width="300" height="146" alt="Презентации">
+						</figure>
+						<h2 class="title">Презентации</h2>
+						<p class="description">
+							Вы даже не подозреваете,
+							насколько вы изумительны!
+						</p>
+						<a class="btn" href="#">Заказать</a>
+					</article>
+				</section>
 
-        <section class="about clearfix">
-          <div class="left">
-            <b class="slogan">
-              Мы — маленькая, но гордая
-              дизайн-студия из Краснодара.
-            </b>
-            <p class="description">
-              Исповедуем принципы минимализма и чистоты. Ставим математический расчет
-              превыше креатива. Работаем не покладая рук, как роботы.
-            </p>
+				<section class="about clearfix">
+					<div class="left">
+						<b class="slogan">
+							Мы — маленькая, но гордая
+							дизайн-студия из Краснодара.
+						</b>
+						<p class="description">
+							Исповедуем принципы минимализма и чистоты. Ставим математический расчет
+							превыше креатива. Работаем не покладая рук, как роботы.
+						</p>
 
-            <section class="orders">
-              <h3 class="title">Выполняем заказы на разработку:</h3>
-              <ul class="list">
-                <li>Веб-сайтов любой сложности</li>
-                <li>Мобильных приложений для iOS и Android</li>
-                <li>Слайдшоу и видео для корпоративных презентаций</li>
-              </ul>
-            </section>
-          </div>
+						<section class="orders">
+							<h3 class="title">Выполняем заказы на разработку:</h3>
+							<ul class="list">
+								<li>Веб-сайтов любой сложности</li>
+								<li>Мобильных приложений для iOS и Android</li>
+								<li>Слайдшоу и видео для корпоративных презентаций</li>
+							</ul>
+						</section>
+					</div>
 
-          <section class="strengths clearfix">
-            <figure class="pic">
-              <img src="img/nerds-illustration.jpg" width="360" height="208" alt="Студия Нёрдс">
-            </figure>
-            <h3 class="title">С 2004 года любим точность во всем:</h3>
-            <div class="strengths-item">
-              <b>146<sup>%</sup></b>
-              <span>Уровень самоотдачи</span>
-            </div>
-            <div class="strengths-item">
-              <b>100<sup>%</sup></b>
-              <span>Соблюдение сроков</span>
-            </div>
-            <div class="strengths-item">
-              <b>50<sup>%</sup></b>
-              <span>Минимальная предоплата</span>
-            </div>
-          </section>
-        </section>
+					<section class="strengths clearfix">
+						<figure class="pic">
+							<img src="img/nerds-illustration.jpg" width="360" height="208" alt="Студия Нёрдс">
+						</figure>
+						<h3 class="title">С 2004 года любим точность во всем:</h3>
+						<div class="strengths-item">
+							<b>146<sup>%</sup></b>
+							<span>Уровень самоотдачи</span>
+						</div>
+						<div class="strengths-item">
+							<b>100<sup>%</sup></b>
+							<span>Соблюдение сроков</span>
+						</div>
+						<div class="strengths-item">
+							<b>50<sup>%</sup></b>
+							<span>Минимальная предоплата</span>
+						</div>
+					</section>
+				</section>
 
-        <section class="clients">
-          <figure class="pic">
-            <a href="#">
-              <img src="img/logo-1.png" width="199" height="68" alt="HTML Academy">
-            </a>
-          </figure>
-          <figure class="pic">
-            <a href="#">
-              <img src="img/logo-2.png" width="209" height="90" alt="Barbershop Borodinski">
-            </a>
-          </figure>
-          <figure class="pic">
-            <a href="#">
-              <img src="img/logo-3.png" width="185" height="52" alt="Pink">
-            </a>
-          </figure>
-          <figure class="pic">
-            <a href="#">
-              <img src="img/logo-4.png" width="173" height="84" alt="Mishka">
-            </a>
-          </figure>
-        </section>
-      </div>
-    </main>
+				<section class="clients">
+					<figure class="pic">
+						<a href="#">
+							<img src="img/logo-1.png" width="199" height="68" alt="HTML Academy">
+						</a>
+					</figure>
+					<figure class="pic">
+						<a href="#">
+							<img src="img/logo-2.png" width="209" height="90" alt="Barbershop Borodinski">
+						</a>
+					</figure>
+					<figure class="pic">
+						<a href="#">
+							<img src="img/logo-3.png" width="185" height="52" alt="Pink">
+						</a>
+					</figure>
+					<figure class="pic">
+						<a href="#">
+							<img src="img/logo-4.png" width="173" height="84" alt="Mishka">
+						</a>
+					</figure>
+				</section>
+			</div>
+		</main>
 
-    <footer class="main-footer">
-      <section class="map">
-        <div class="container">
-          <section class="contacts">
-            <h3 class="title">Nёrds Design Studio</h3>
-            <p>
-              191186, Санкт-Петербург,<br>
-              ул. Б. Конюшенная, д. 19/8
-            </p>
-            <p>тел. <a href="tel:+781227575">+7 (812) 275-75-75</a></p>
-            <a class="btn" href="#">Напишите нам</a>
-          </section>
-        </div>
-      </section>
+		<footer class="main-footer">
+			<section class="map">
+				<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=DU9cPpw7fAZPHfuVyqiUBrn4bYRNspUq&amp;height=420&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=true"></script>
+				<div class="container">
+					<section class="contacts">
+						<h3 class="title">Nёrds Design Studio</h3>
+						<p>
+							191186, Санкт-Петербург,<br>
+							ул. Б. Конюшенная, д. 19/8
+						</p>
+						<p>тел. <a href="tel:+781227575">+7 (812) 275-75-75</a></p>
+						<a class="btn" href="form.html">Напишите нам</a>
+					</section>
+				</div>
+			</section>
 
-      <section class="social">
-        <div class="container clearfix">
-          <div class="social-btns">
-            <a class="social-btn" href="#">
-              <span class="icon vk">Вконтакте</span>
-            </a>
-            <a class="social-btn" href="#">
-              <span class="icon fb">Фейсбук</span>
-            </a>
-            <a class="social-btn" href="#">
-              <span class="icon inst">Инстаграм</span>
-            </a>
-          </div>
-          <div class="promo-text">
-            <b class="slogan">Давайте дружить, это выгодно!</b>
-            <p class="description">Скидка 10% для друзей из социальных сетей.</p>
-          </div>
-        </div>
-      </section>
-    </footer>
-    
-    <section class="contact-block" hidden>
-    	<h2 class="title">Напишите нам</h2>
-    	<form class="contact-form clearfix" action="#" method="post">
-    		<button class="cross" type="button" title="Закрыть">Закрыть</button>
-    		<div class="form-left">
+			<section class="social">
+				<div class="container clearfix">
+					<div class="social-btns">
+						<a class="social-btn" href="#">
+							<span class="icon vk">Вконтакте</span>
+						</a>
+						<a class="social-btn" href="#">
+							<span class="icon fb">Фейсбук</span>
+						</a>
+						<a class="social-btn" href="#">
+							<span class="icon inst">Инстаграм</span>
+						</a>
+					</div>
+					<div class="promo-text">
+						<b class="slogan">Давайте дружить, это выгодно!</b>
+						<p class="description">Скидка 10% для друзей из социальных сетей.</p>
+					</div>
+				</div>
+			</section>
+		</footer>
+		
+		<section class="contact-block" hidden>
+			<h2 class="title">Напишите нам</h2>
+			<form class="contact-form clearfix" action="#" method="post">
+				<button class="cross" type="button" title="Закрыть">Закрыть</button>
+				<div class="form-left">
 					<label for="user-name">Ваше имя:</label>
-					<input id="user-name" type="text" name="user-name" placeholder="Представьтесь, пожалуйста">
+					<input id="user-name" type="text" name="user-name" placeholder="Представьтесь, пожалуйста" required>
 				</div>
-   			<div class="form-right">
+				<div class="form-right">
 					<label for="user-email">Ваш e-mail:</label>
-					<input id="user-email" type="text" name="user-email" placeholder="Для отправки ответа">
+					<input id="user-email" type="text" name="user-email" placeholder="Для отправки ответа" required>
 				</div>
-   			<div class="form-bottom">
+				<div class="form-bottom">
 					<label for="user-letter">Текст письма:</label>
-					<textarea id="user-letter" name="user-letter" rows="5" placeholder="В свободной форме" ></textarea>
+					<textarea id="user-letter" name="user-letter" rows="5" placeholder="В свободной форме"></textarea>
 					<button class="btn">Отправить</button>
 				</div>
-    	</form>
-    </section>
-    <div class="overlay" hidden></div>
-  </body>
+			</form>
+		</section>
+		<div class="overlay" hidden></div>
+		
+		<script src="js/contactBlock.min.js"></script>
+	</body>
 </html>
