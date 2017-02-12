@@ -4,8 +4,8 @@
 		<meta charset="utf-8">
 		<title>HTML Academy: Нёрдс</title>
 		<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
-		<link href="css/normalize.css" rel="stylesheet">
-		<link href="css/styles.css" rel="stylesheet">
+		<link href="css/normalize.min.css" rel="stylesheet">
+		<link href="css/styles.min.css" rel="stylesheet">
 	</head>
 	
 	<body>
@@ -102,7 +102,7 @@
 								</li>
 							</ul>
 						</fieldset>
-						<button class="btn" type="submit" name="show">Показать</button>
+						<button class="btn" type="submit">Показать</button>
 					</form>
 				</aside>
 
@@ -225,7 +225,8 @@
 						<a class="btn" href="form.html">Напишите нам</a>
 					</section>
 				</div>
-				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1463.0666013640327!2d30.320533071210683!3d59.93866398844189!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca77c663%3A0xe2913435672b14c9!2s21Shop!5e0!3m2!1sru!2skz!4v1486822690291" width="100%" height="419" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1463.0666013640327!2d30.320533071210683!3d59.93866398844189!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca77c663%3A0xe2913435672b14c9!2s21Shop!5e0!3m2!1sru!2skz!4v1486822690291" allowfullscreen></iframe>
 			</section>
 
 			<section class="social">
@@ -234,13 +235,16 @@
 						<a class="social-btn" href="#">
 							<span class="icon vk">Вконтакте</span>
 						</a>
+
 						<a class="social-btn" href="#">
 							<span class="icon fb">Фейсбук</span>
 						</a>
+
 						<a class="social-btn" href="#">
 							<span class="icon inst">Инстаграм</span>
 						</a>
 					</div>
+
 					<div class="promo-text">
 						<b class="slogan">Давайте дружить, это выгодно!</b>
 						<p class="description">Скидка 10% для друзей из социальных сетей.</p>
@@ -255,16 +259,18 @@
 				<button class="cross" type="button" title="Закрыть">Закрыть</button>
 				<div class="form-left">
 					<label for="user-name">Ваше имя:</label>
-					<input id="user-name" type="text" name="user-name" placeholder="Представьтесь, пожалуйста">
+					<input id="user-name" type="text" name="user-name" placeholder="Представьтесь, пожалуйста" required>
 				</div>
+
 				<div class="form-right">
 					<label for="user-email">Ваш e-mail:</label>
-					<input id="user-email" type="text" name="user-email" placeholder="Для отправки ответа">
+					<input id="user-email" type="text" name="user-email" placeholder="Для отправки ответа" required>
 				</div>
+
 				<div class="form-bottom">
 					<label for="user-letter">Текст письма:</label>
 					<textarea id="user-letter" name="user-letter" rows="5" placeholder="В свободной форме" required></textarea>
-					<button class="btn">Отправить</button>
+					<button class="btn" type="submit">Отправить</button>
 				</div>
 			</form>
 		</section>

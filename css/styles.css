@@ -755,6 +755,13 @@ img {
 	z-index: 10;
 }
 
+.map iframe {
+	width: 100%;
+	height: 419px;
+
+	border: none;
+}
+
 .contacts {
 	position: absolute;
 	top: 53px;
